@@ -1,0 +1,401 @@
+/**Fonts for use
+#46C864 (rgb )
+#505B6B(old header)
+#3E4754(new header);
+
+*/
+@font-face
+{
+font-family: TitilliumWeb;
+src: url('../fonts/TitilliumWeb-Regular.ttf');
+font-weight:400;
+}
+@font-face
+{
+font-family: TitilliumWeb;
+src: url('../fonts/TitilliumWeb-Light.ttf');
+font-weight:300;
+}
+@font-face
+{
+font-family: TitilliumWeb;
+src: url('../fonts/TitilliumWeb-Bold.ttf');
+font-weight:700;
+}
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color:#46C864;
+  }
+}
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color:#46C864;
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color:#46C864;
+  }
+}
+
+@-ms-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color:#46C864;
+  }
+}
+
+@-o-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color:#46C864;
+  }
+}
+
+@keyframes glow {
+  from,to{
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.8);
+  }
+  50%{
+    box-shadow: inset 0 0 0px rgba(255,255,255,0);
+  }
+}
+
+
+
+*
+{
+	margin:0;
+	padding:0;
+	font-family:TitilliumWeb,Arial;
+}
+body
+{
+	font-family:TitilliumWeb,Arial;
+  height: 100%;
+}
+h2
+{
+	color: #fff;
+	font-size:60px;
+	margin: 5px auto;
+	width: 60%;
+}
+.header
+{
+	top:0;
+	left:0;
+  background-color:#3E4754;
+  position:fixed;
+  height:75px;
+  line-height:75px;
+  width:100%;
+  padding:0 2.5%;
+  box-sizing:border-box;
+  transition:all 0.3s ease-in-out;
+  z-index:2;
+}
+.logo
+{
+	width:225px;
+  height:100%;
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  float:left;
+  transition:all 0.3s ease-in-out;
+}
+.headerMenu
+{
+		float: right;
+}
+.tab
+{
+	float: left;
+	font-size:18px;
+	list-style: none;
+	padding:0 20px;
+	color:#fff;
+	cursor: pointer;
+	transition:all 0.3s ease-in-out;
+}
+.headerMenu li:hover
+{
+	color:#999;
+}
+.collapsed {
+	height:55px;
+	line-height:55px;
+}
+.currentPage
+{
+ color:#46C863 !important;
+}
+.collapsed .currentPage {
+	line-height:55px;
+}
+
+.contentWrapper
+{
+	display: flex;
+  flex-direction: column;
+	top: 0;
+}
+.cover
+{
+	min-height:120vh;
+  background-image:url('../img/headerbg.jpg');
+  background-size: cover;
+  background-attachment:fixed;
+  display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align: center;
+	box-sizing:border-box;
+	padding:0 2.5%;
+}
+.homeContent
+{
+  margin-top: 50px;
+}
+.homeContent h2
+{
+  margin:5px auto;
+  width: 60%;
+}
+
+.blinkingCursor {
+  font-weight: 100;
+  font-size: 60px;
+  color:#46C864;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+.firstText
+{
+  letter-spacing: 4px;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+.secondText
+{
+  letter-spacing: 2px;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+}
+.captionText
+{
+	color: #fff;
+	font-size:20px;
+  letter-spacing: 2px;
+}
+.aboutContent
+{
+min-height:120vh;
+background-color:#34495e;
+}
+.introContent
+{
+  position: relative;
+  margin:auto;
+  align-content: center;
+  margin-top:-8%;
+  width:50%;
+  background-color: #2A3340;
+  padding:3%;
+  z-index:1; 
+}
+.introText
+{
+  padding-top:5%;
+  display: flex;
+  font-size:20px;
+  color:#fff;  
+  justify-content: center;
+    
+}
+.introContent a
+{
+  color:#fff;  
+  text-decoration:none;
+  border:1px solid #46C864; 
+  padding: 15px;
+}
+.introContent a:hover
+{
+  background-color: #46C864;
+  transition:all 0.5s ease-in-out;
+}
+
+.skillsContent
+{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+}
+.skillsHeading
+{
+ display: inline-block;
+ text-align: center;
+ letter-spacing: 4px;
+ flex:2;
+}
+.skillsSubHeading
+{
+
+  text-align: center;
+  color: #fff;
+	font-size:20px;
+  letter-spacing: 2px;
+  flex:2;
+}
+
+.skillGraphs{
+   width: 50%;
+   flex: 3;
+   align-items: center;
+   padding: 0 25%;
+}
+.skill{
+  padding-top:3%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.skillText{
+  color: #fff;
+
+  font-size:20px;
+  flex: 1;
+}
+.skillBar{
+
+  width: 85%;
+  background: url('../img/line.png');
+  flex: 4;
+  background-position-y: center;
+  background-size: 5px;
+}
+.skillBarDefault{
+   width: 0%!important;
+}
+.skillProgress{
+   height: 10px;
+   background-color: #46C864;
+   background-position-y: center;
+   border-radius: 30px;
+   transition: 3s linear;
+  
+}
+.glowBar{
+  animation: 1s glow 4s;
+}
+.worksContent
+{
+ min-height:100vh;
+ display:flex;
+ width:100%;
+ justify-content:center;
+ background: #ddd;
+ margin: auto;
+}
+.contactContent
+{
+ min-height:100vh;
+display:flex;
+width:100%;
+justify-content:center;
+background: #eee;
+margin: auto;
+}
+.footer {
+	background:#222;
+	color:#fff;
+	height:50px;
+	line-height:50px;
+	padding:0 2.5%;
+	box-sizing:border-box;
+}
+.showcase
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contentTitle{
+  display:flex;
+  justify-content: center;
+   margin-top:25px;
+   font-weight:bolder;
+   font-size: 50px;
+}
+
+.pilotProject{
+  display: flex;
+  flex-direction: row;
+ padding:20px;
+}
+.projectImg{
+  width:45%;
+}
+.projectCard
+{
+  display: flex;
+  flex-direction: column;
+  width:55%;
+  padding:10px;
+  justify-content: center;
+}
+.projectTitle
+{
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+}
+.projectDesc{
+  display: flex;
+
+}
+/*.scrolltoTop
+{
+  <a href="#" class="scrolltoTop"></a>
+  text-decoration: none;
+  right: 15px;
+  bottom:12px;
+  -justify-content: center;
+  -align-content:flex-start;
+  position: fixed;
+  color: #fff;
+}
+
+
+
+.doughnut {
+  height: 70;
+  width:70;
+  border: 1px dashed #CCC;
+}
+
+*/
